@@ -17,7 +17,7 @@ compile_sass = true
 minify_html = true
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+build_search_index = false
 
 # The taxonomies to be rendered for the site and their configuration of the default languages
 # Example:
@@ -41,3 +41,11 @@ highlight_theme = "nord"
 
 [extra]
 # Put all your custom variables here
+
+# navigation items in the nav bar
+header_nav = [
+  { name = "~/", url = "/" },
+  #{ name = "~/about", url = "/about" },
+  { name = "~/blog", url = "/blog" },
+  { name = "~/categories", url = "/categories" },
+]

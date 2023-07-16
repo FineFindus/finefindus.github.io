@@ -1,17 +1,9 @@
 <header class="container">
-   <a href="/" class="title"><p class="brand-title">FineFindus Blog</p></a>
-     <ul class="nav">
-       <li>
-         <a href="/categories">Categories</a>
-       </li>
-       <!-- <li> -->
-       <!--   <a href="/about" title="About me">About</a> -->
-       <!-- </li> -->
-       <!-- <li> -->
-       <!--   <a href="/projects" title="Projects I created/contributed">Projects</a> -->
-       <!-- </li> -->
-     <li>
-       <a href="https://github.com/FineFindus" title="My GitHub profile">GitHub</a>
-     </li>
-   </ul>
+    {% if config.extra.header_nav %}
+      <nav class="navBar">
+        {% for nav_item in config.extra.header_nav %}
+        <a href="{{ nav_item.url | safe }}" >{{ nav_item.name }}</a>
+        {% endfor %}
+      </nav>
+    {% endif %}
 </header>
