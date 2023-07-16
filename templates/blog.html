@@ -1,13 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">Welcome to my website</h1>
-<p>
-  This is my personal website, where I post articles and other stuff, usually about coding.
-</p>
+<h1 class="title">Blog</h1>
 
+<!-- List all blogs with prepended date-->
 {% set section = get_section(path="blog/_index.md") %}
-<h2>Articles</h2>
+<!-- <h2>Articles</h2> -->
 <ul class="posts">
   {% for page in section.pages %}
   <li>
