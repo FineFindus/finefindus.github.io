@@ -3,7 +3,7 @@ title = "Projects"
 template_page = "page.html"
 +++
 
-Curated selection of various projects I created, maintain or regulary contribute to.
+Curated selection of various projects I created, maintain or regularly contribute to.
 
 
 ## [Eyedropper](https://apps.gnome.org/app/com.github.finefindus.eyedropper/)
@@ -28,6 +28,6 @@ You can also tap to let the application guess the required beats per minute.
 
 ## [artem](https://github.com/FineFindus/artem)
 
-Convert images from multiple formats (jpg, png, webp, etc…) to ASCII art, written in Rust
+Convert images from multiple formats (jpg, png, webp, etc…) to ASCII art, written in Rust.
 
 ![artem showcase](/img/artem_showcase.png)

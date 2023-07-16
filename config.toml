@@ -51,7 +51,7 @@ header_nav = [
   #{ name = "~/categories", url = "/categories" },
 ]
 
-links = [                             # Your links
+links = [
     { name = "GitHub", icon = "github", url = "https://github.com/FineFindus" },
     { name = "GitLab", icon = "gitlab", url = "https://gitlab.gnome.org/FineFindus" },
     { name = "Mastodon", icon = "mastodon", url = "https://floss.social/@FineFindus" },
