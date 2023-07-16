@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="FineFindus" />
+    {% block seo %}
+    <meta name="description" content="Personal website" />
+    <meta property="og:title" content="Home" />
+    <meta property="og:description" content="Personal website" />
+    <meta property="og:type" content="article" />
+    {% endblock %}
+    <title>{% block title %}Home{% endblock %}</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    {% block rss %}
+    <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
+    {% endblock %}
+  </head>
+
+  <body>
+    <header class="container">
+      <a href="/" class="title"><p class="brand-title">FineFindus Blog</p></a>
+      <ul class="nav">
+        <li><a href="/categories">Categories</a></li>
+        <!-- <li> -->
+        <!--   <a href="/about" title="About me">About</a> -->
+        <!-- </li> -->
+        <!-- <li> -->
+        <!--   <a href="/projects" title="Projects I created/contributed">Projects</a> -->
+        <!-- </li> -->
+        <li>
+          <a href="https://github.com/FineFindus" title="My GitHub profile">GitHub</a>
+        </li>
+      </ul>
+    </header>
+    <section class="section container">
+      {% block content %} {% endblock %}
+    </section>
+
+    <section class="section container" style="border-top: 4px #D8DEE9 dotted">
+        <p>Copyright &copy; 2023 FineFindus</p>
+        <!-- <p>This page is licensed under a <a href="https://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.</p> -->
+    </section>
+  </body>
+</html>
