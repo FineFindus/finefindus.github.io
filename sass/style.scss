@@ -238,3 +238,83 @@ footer {
     }
   }
 }
+
+// Homepage
+
+#wrapper {
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   #name {
+     text-align: center;
+     font-size: 1.5em;
+     margin: 0.5em;
+     color: $quotecolor;
+   }
+
+  #icons {
+    display: flex;
+    gap: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;  align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 10px;
+
+    a,
+    button {
+      width: 30px;
+      height: 30px;  
+      fill: $color;
+    }
+
+    button {
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      color: $quotecolor;
+    }
+
+    a:hover {
+      fill: $quotecolor;
+    }
+  }
+
+  main {
+    max-width: 650px;
+    padding: 2em 1em 6em;
+  }
+
+
+  #info {
+    display: flex;
+    gap: 1em;
+
+    img {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+    }
+
+    #text {
+      font-size: 1.25em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+
+  #brief {
+    font-size: 1.25em;
+    line-height: 1.5;
+
+    p {
+      word-wrap: break-word;
+      margin: 0.5em 0;
+    }
+  }
+}

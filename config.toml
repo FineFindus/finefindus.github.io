@@ -50,3 +50,10 @@ header_nav = [
   #{ name = "~/blog", url = "/blog" },
   #{ name = "~/categories", url = "/categories" },
 ]
+
+links = [                             # Your links
+    { name = "GitHub", icon = "github", url = "https://github.com/FineFindus" },
+    { name = "GitLab", icon = "gitlab", url = "https://gitlab.gnome.org/FineFindus" },
+    { name = "Mastodon", icon = "mastodon", url = "https://floss.social/@FineFindus" },
+    { name = "Email", icon = "email", url = "mailto:finefindus@proton.me" },
+]

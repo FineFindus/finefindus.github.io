@@ -1,9 +1,25 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">Welcome to my website</h1>
-<p>
-  This is my personal website, where I post articles and other stuff, usually about coding.
-</p>
-
-{% endblock content %}
+<div id="wrapper">
+  <main>
+    <section id="info">
+      <img src="/avatar.webp" alt="avatar">
+    </section>
+    <p id="name">FineFindus</p>
+    <section id="links">
+      <div id="icons">
+        {% for link in config.extra.links -%}
+        <a href="{{ link.url }}" aria-label="{{ link.name }}" target="_blank" rel='noreferrer noopener'>
+          {% set icon_path = "static/icon/" ~ link.icon ~ ".svg" %}
+          {% set icon = load_data(path=icon_path) %}
+          {{ icon | safe }}
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+    <section id="brief">
+      {{ section.content | trim | safe }}
+    </section>
+  </main>
+</div>{% endblock content %}
