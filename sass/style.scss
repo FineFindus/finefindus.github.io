@@ -2,7 +2,7 @@ $color: #D8DEE9;
 $bgcolor: #14191F;
 $code: #5e81ac;
 $codeblock: #0f1419;
-$quotecolor: #88c0d0;
+$highlight: #88c0d0;
 
 /*
   1. Use a more-intuitive box-sizing model.
@@ -117,6 +117,10 @@ a {
   font-weight: bold;
 }
 
+a:hover {
+  color: $highlight;
+}
+
 pre {
   padding: 10px;
   overflow-x: auto;
@@ -143,7 +147,7 @@ code {
 
 blockquote {
   background-color: $codeblock;
-  border-left: 4px $quotecolor solid;
+  border-left: 4px $highlight solid;
   border-radius: 2px;
   padding: 0px 10px
 }
@@ -172,7 +176,7 @@ blockquote {
 }
 
 .navBar a:hover {
-  color: $code;
+  color: $highlight;
 }
 
 ul.posts {
@@ -251,7 +255,7 @@ footer {
      text-align: center;
      font-size: 1.5em;
      margin: 0.5em;
-     color: $quotecolor;
+     color: $highlight;
    }
 
   #icons {
@@ -276,11 +280,11 @@ footer {
       border: none;
       background-color: transparent;
       cursor: pointer;
-      color: $quotecolor;
+      color: $highlight;
     }
 
     a:hover {
-      fill: $quotecolor;
+      fill: $highlight;
     }
   }
 
