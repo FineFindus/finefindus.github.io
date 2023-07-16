@@ -47,6 +47,6 @@ header_nav = [
   { name = "~/", url = "/" },
   #{ name = "~/about", url = "/about" },
   { name = "~/projects", url = "/projects" },
-  { name = "~/blog", url = "/blog" },
-  { name = "~/categories", url = "/categories" },
+  #{ name = "~/blog", url = "/blog" },
+  #{ name = "~/categories", url = "/categories" },
 ]
