@@ -2,6 +2,7 @@ $color: #D8DEE9;
 $bgcolor: #14191F;
 $code: #5e81ac;
 $codeblock: #0f1419;
+$quotecolor: #88c0d0;
 
 /*
   1. Use a more-intuitive box-sizing model.
@@ -142,7 +143,7 @@ code {
 
 blockquote {
   background-color: $codeblock;
-  border-left: 4px #88c0d0 solid;
+  border-left: 4px $quotecolor solid;
   border-radius: 2px;
   padding: 0px 10px
 }
