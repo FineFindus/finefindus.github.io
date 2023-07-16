@@ -220,3 +220,20 @@ ul {
 h1,h2,h3 {
   border-bottom: 4px $color dotted;
 }
+
+
+footer {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  @media (max-width: 374px) {
+    & {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+}
