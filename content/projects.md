@@ -3,7 +3,7 @@ title = "Projects"
 template_page = "page.html"
 +++
 
-List of various projects I created, maintain or regulary contribute to.
+Curated selection of various projects I created, maintain or regulary contribute to.
 
 
 ## [Eyedropper](https://apps.gnome.org/app/com.github.finefindus.eyedropper/)

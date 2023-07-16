@@ -37,6 +37,7 @@ body {
   font-family: "JetBrains Mono", monospace;
   background-color: $bgcolor;
   color: $color;
+    scrollbar-color: darken($code, 20%) $codeblock; 
 }
 /*
     Typographic tweaks!
