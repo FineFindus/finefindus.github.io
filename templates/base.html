@@ -21,21 +21,7 @@
   </head>
 
   <body>
-    <header class="container">
-      <a href="/" class="title"><p class="brand-title">FineFindus Blog</p></a>
-      <ul class="nav">
-        <li><a href="/categories">Categories</a></li>
-        <!-- <li> -->
-        <!--   <a href="/about" title="About me">About</a> -->
-        <!-- </li> -->
-        <!-- <li> -->
-        <!--   <a href="/projects" title="Projects I created/contributed">Projects</a> -->
-        <!-- </li> -->
-        <li>
-          <a href="https://github.com/FineFindus" title="My GitHub profile">GitHub</a>
-        </li>
-      </ul>
-    </header>
+    {% include "header.html" %}
     <section class="section container">
       {% block content %} {% endblock %}
     </section>
