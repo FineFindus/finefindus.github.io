@@ -9,7 +9,6 @@ $breakpoint: 900px;
 *,
 *::before,
 *::after {
-  font-variant-ligatures: none;
   box-sizing: border-box;
   font-size: 16px;
 
@@ -26,6 +25,7 @@ body,
 html {
   height: 100%;
   font-family: "JetBrains Mono", monospace;
+  font-variant-ligatures: none;
   background-color: $color-background;
   color: $color-primary;
   scrollbar-color: darken($color-code, 20%) $color-codeblock;
@@ -124,6 +124,7 @@ pre {
 
 code {
   font-family: "JetBrains Mono", monospace;
+  font-variant-ligatures: normal;
   padding: 2px;
   line-height: 1.8;
   font-weight: bold;
