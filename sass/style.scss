@@ -1,8 +1,11 @@
 
+// $color-background: #D8DEE9;
+// $color-primary: #14191F;
+// $color-quoteblock: #eceff4;
 $color-primary: #D8DEE9;
 $color-background: #14191F;
 $color-code: #5e81ac;
-$color-codeblock: #0f1419;
+$color-quoteblock: #0f1419;
 $color-highlight: #88c0d0;
 $breakpoint: 900px;
 
@@ -28,7 +31,7 @@ html {
   font-variant-ligatures: none;
   background-color: $color-background;
   color: $color-primary;
-  scrollbar-color: darken($color-code, 20%) $color-codeblock;
+  scrollbar-color: darken($color-code, 20%) $color-quoteblock;
 }
 
 body {
@@ -95,7 +98,7 @@ p {
 a {
   color: $color-primary;
   font-weight: bold;
-    transition: transform .2s;
+  transition: transform .2s;
 
   &:hover {
     color: $color-highlight;
@@ -134,7 +137,7 @@ code {
 }
 
 blockquote {
-  background-color: $color-codeblock;
+  background-color: $color-quoteblock;
   border-left: 4px $color-highlight solid;
   border-radius: 2px;
   padding: 0px 10px;
@@ -208,6 +211,8 @@ ul {
   margin-bottom: 10px;
 }
 
+// Footer
+
 footer {
   font-size: 1rem;
   display: flex;
@@ -221,6 +226,8 @@ footer {
     gap: 0;
   }
 }
+
+// Homepage
 
 #wrapper {
   min-height: 100vh;
