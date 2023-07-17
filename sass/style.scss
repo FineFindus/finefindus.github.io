@@ -213,6 +213,10 @@ ul {
 
 // Footer
 
+.divider {
+  border-top: 4px $color-primary dotted
+}
+
 footer {
   font-size: 1rem;
   display: flex;
