@@ -231,8 +231,14 @@ footer {
     text-align: center;
     font-size: 2em;
     margin: 0.5em;
-    color: $color-code;
-  }
+    color: $color-highlight;
+    // background: linear-gradient(45deg, #ebcb8b, #bf616a);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -moz-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // -moz-text-fill-color: transparent;
+} 
 
   #icons {
     display: flex;
