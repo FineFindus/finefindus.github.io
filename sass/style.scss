@@ -95,9 +95,16 @@ p {
 a {
   color: $color-primary;
   font-weight: bold;
+    transition: transform .2s;
 
   &:hover {
     color: $color-highlight;
+    background: linear-gradient(45deg, $color-highlight, #a3be8c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
   }
 }
 
@@ -154,10 +161,6 @@ blockquote {
   justify-content: flex-end;
   align-items: center;
   align-content: flex-end;
-
-  a:hover {
-    color: $color-highlight;
-  }
 }
 
 ul.posts {
@@ -272,11 +275,12 @@ footer {
     display: flex;
     gap: 1em;
 
+    //avatar
     img {
       height: 170px;
       width: 170px;
       border-radius: 50%;
-    }
+    } 
 
     #text {
       font-size: 1.25em;
