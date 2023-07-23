@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://finefindus.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://finefindus.github.io/blog/</loc>
+    </url>
+    <url>
+        <loc>https://finefindus.github.io/blog/artem-2-0-0/</loc>
+        <lastmod>2023-07-23</lastmod>
+    </url>
+    <url>
+        <loc>https://finefindus.github.io/categories/</loc>
+    </url>
+    <url>
+        <loc>https://finefindus.github.io/categories/rust/</loc>
+    </url>
+    <url>
+        <loc>https://finefindus.github.io/projects/</loc>
+    </url>
+</urlset>

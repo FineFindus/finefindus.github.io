@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>FineFindus - Blog</title>
+    <subtitle>Personal blog.</subtitle>
+    <link href="https://finefindus.github.io/blog/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://finefindus.github.io/blog/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-07-23T00:00:00+00:00</updated>
+    <id>https://finefindus.github.io/blog/atom.xml</id>
+    <entry xml:lang="en">
+        <title>artem 2.0.0</title>
+        <published>2023-07-23T00:00:00+00:00</published>
+        <updated>2023-07-23T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://finefindus.github.io/blog/artem-2-0-0/" type="text/html"/>
+        <id>https://finefindus.github.io/blog/artem-2-0-0/</id>
+        
+        <content type="html">&lt;h1 id=&quot;artem-2-0-0&quot;&gt;artem 2.0.0&lt;&#x2F;h1&gt;
+&lt;p&gt;A new version of &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;FineFindus&#x2F;artem&quot;&gt;&lt;code&gt;artem&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; has been released. artem is an image-to-ASCII converter.
+This release brings various performance and code improvements, as well as full Unicode support, which makes images like this possible.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;artem_2_0&#x2F;unicode_example.png&quot; alt=&quot;ASCII art of an emoji, consisting of emoji&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Overall, artem should now be 10-16% faster.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;cli&quot;&gt;CLI&lt;&#x2F;h2&gt;
+&lt;p&gt;The &lt;code&gt;-h&lt;&#x2F;code&gt; flag has been changed to show the help information instead of resizing the image to the terminal height.
+To use the terminal height, the &lt;code&gt;--height&lt;&#x2F;code&gt; flag is still available. Due to an upgrade of the underlying CLI crate, the help output should now also be more readable.&lt;&#x2F;p&gt;
+&lt;p&gt;As mentioned earlier, it is now possible to use artem with Unicode characters using &lt;code&gt;--characters &amp;quot;🙂&amp;quot;&lt;&#x2F;code&gt; or just &lt;code&gt;-c &amp;quot;🙃&amp;quot;&lt;&#x2F;code&gt; for short. 
+Note that the usual rules for using a custom character set apply, see the man page or use the &lt;code&gt;--help&lt;&#x2F;code&gt; command to learn more. In addition, many Unicode characters
+such as emoticons, have a different size than standard ASCII characters, so using both can cause distortion.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;using-artem-as-a-crate&quot;&gt;Using &lt;code&gt;artem&lt;&#x2F;code&gt; as a crate&lt;&#x2F;h2&gt;
+&lt;p&gt;If you&#x27;ve ever tried to use &lt;code&gt;artem&lt;&#x2F;code&gt; version 1 as a library and looked at its &lt;a href=&quot;https:&#x2F;&#x2F;docs.rs&#x2F;artem&#x2F;1.2.1&#x2F;artem&#x2F;index.html&quot;&gt;docs.rs page&lt;&#x2F;a&gt;, you may have noticed a warning,
+stating that artem should not be used as a library. This did not stop people from using it, so version 2 provides more explicit support.
+It now provides sample code for converting an image, and the &lt;code&gt;Option&lt;&#x2F;code&gt; which is used to configure the conversion has been renamed to &lt;code&gt;Config&lt;&#x2F;code&gt; so that it no longer conflicts with the 
+with rust&#x27;s built-in &lt;code&gt;Option&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Previously &lt;code&gt;convert()&lt;&#x2F;code&gt; took the configuration by value, so to convert multiple images with the same configuration it was necessary to either clone the config or rebuild it. 
+rebuild it each time. Now it just takes a reference to the &lt;code&gt;config&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;migration-to-v2&quot;&gt;Migration to V2&lt;&#x2F;h4&gt;
+&lt;p&gt;If you&#x27;re already use artem, all you have to do is replace &lt;code&gt;OptionBuilder&lt;&#x2F;code&gt; with &lt;code&gt;ConfigBuilder&lt;&#x2F;code&gt; and pass it as a reference to &lt;code&gt;convert()&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;future&quot;&gt;Future&lt;&#x2F;h2&gt;
+&lt;p&gt;As &lt;code&gt;-h&lt;&#x2F;code&gt; is commonly used as a shorthand for help, the --height function currently lacks a short alias.&lt;&#x2F;p&gt;
+&lt;p&gt;A lot of time is currently spent on colouring the output. artem uses &lt;a href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;colored&quot;&gt;&lt;code&gt;coloured&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;, which checks each time it is invoked
+whether the string should be coloured. In artems case this is every single character that is converted&#x2F;printed, which adds up. As only small part of the whole feature set is used,
+it should be possible to include it directly in artem.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
